@@ -1,0 +1,21 @@
+{
+  "dbEndpoint": "admin:basa3aTR@ds037395.mlab.com:37395",
+  "dbUsername": "admin",
+  "dbPassword": "basa3aTR",
+  "dbName": "drivenode",
+  "tokenExpire": "3",
+  "tokenPrivateKeyPath": "config/private.key",
+  "tokenPublicKeyPath": "config/public.pem",
+  "uploadTempPath": "temp/uploads",
+  "filesPath": "files",
+  "fileDecrypt": "temp/decryptFiles",
+  "fileCompressDecrypt": "temp/decryptCompressFiles",
+  "fileCompress": "temp/compressFiles",
+  "encryptionMethod": "AES128",
+  "keyPrivatePath": "config/KeySecurity/private.pem",
+  "keyPublicPath": "config/KeySecurity/public.key",
+  "backlistLog": "log/schedule/blacklist",
+  "errorLog": "log/error",
+  "streamTempPath": "temp/stream",
+  "cronDeleteBlacklist": "0 * * * *"
+}

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .text-center
+    form.form-install(action='install',method='POST')
+        img.mb-4(src='/images/hard-drive.svg', alt='', width='72', height='72')
+        h1.h3.mb-3.font-weight-normal DriveNode 2.0 Installation
+        p Create Administration Account
+        label.sr-only(for='inputUsername') Username
+        input#inputUsername.form-control(type='text', autofocus='', value='admin',disabled)
+        label.sr-only(for='inputPassword') Password
+        input#inputPassword.form-control(type='password',name='password',placeholder='Password', required='true')
+        label.sr-only(for='conInputPassword') Confirm Password
+        input#conInputPassword.form-control(type='password',name='confirmPassword',placeholder='Confirm Password', required='true')
+        label.sr-only(for='inputEmail') Email
+        input#inputEmail.form-control(type='email', autofocus='',placeholder='Email',name="email",required="true")
+        if submitBtn
+            button.btn.btn-lg.btn-primary.btn-block(type='submit') Confirm
+        p #{msg}
+        if success
+            a.btn.btn-lg.btn-success.btn-block(href='/') Login
