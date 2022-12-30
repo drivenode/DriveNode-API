@@ -38,7 +38,7 @@
     "randomatic": "^3.1.1",
     "rxjs": "^6.3.3",
     "uuid": "^3.3.2",
-    "webpack": "^4.26.1",
+    "webpack": "^5.75.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
